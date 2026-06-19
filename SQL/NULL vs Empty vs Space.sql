@@ -8,5 +8,7 @@ SELECT 4, '  '
 )
 SELECT
 *,
-DATALENGTH (Category) CategoryLen
+ NULLIF(TRIM(Category), '') Policy2,
+ COALESCE(NULLIF(TRIM(Category), ''), 'unknown') Policy3
+
 FROM Orders
