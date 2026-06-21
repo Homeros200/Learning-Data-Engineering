@@ -1,0 +1,14 @@
+{
+    "George": {
+        "balance": 6869.0,
+        "transactions": [
+            "Deposited: 6969.0",
+            "Withdrew: 100.0"
+        ]
+    },
+    "Georgee": {
+        "password": "1234",
+        "balance": 0,
+        "transactions": []
+    }
+}
