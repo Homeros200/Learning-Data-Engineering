@@ -6,10 +6,3 @@ SELECT
     ProductID,
     SUM(Sales) OVER(partition by ProductID) TotalSales
 FROM Sales.Orders
-
-
-
-
-SELECT 
-*
-FROM Sales.Orders
