@@ -15,3 +15,6 @@ SUM(Sales) OVER(PARTITION BY ProductID) TotalSalesByProducts,
 SUM(Sales) OVER (PARTITION BY ProductID, OrderStatus) SalesByProductsAndStatus
 FROM Sales.Orders
 
+
+
+
