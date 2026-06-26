@@ -19,3 +19,5 @@ FROM(
 )t
 GROUP BY
     CustomerID
+
+
