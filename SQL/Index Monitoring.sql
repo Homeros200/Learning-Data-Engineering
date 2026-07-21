@@ -11,8 +11,7 @@ SELECT
 	s.user_lookups AS UserLookups,
 	s.user_updates AS UserUpdates,
 	COALESCE(s.last_user_seek,s.last_user_scan) LastUpdate
-	
-FROM sys.indexes idx
+	FROM sys.indexes idx
 JOIN sys.tables tbl
 ON idx.object_id = tbl.object_id
 LEFT JOIN sys.dm_db_index_usage_stats s
@@ -20,12 +19,3 @@ ON s.object_id = idx.object_id
 AND s.index_id = idx.index_id
 ORDER BY tbl.name, idx.name
 
-
-
-
-
-
-SELECT * FROM sys.dm_db_index_usage_stats
-SELECT * FROM sys.indexes
--- sp_helpindex 'Sales.DBCustomers'
--- SELECT * FROM sys.tables
